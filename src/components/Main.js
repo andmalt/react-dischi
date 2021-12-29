@@ -21,7 +21,7 @@ const Main = () => {
             setIsError(true)
             console.log(error);
         }
-        setIsLoading(false)
+        setIsLoading(true)
         setIsError(false)
     }
 
@@ -29,6 +29,12 @@ const Main = () => {
         getDiscs();
     }, [])
 
+    if(isLoading){
+        return <Loading /> ;
+    }
+    if(isError){
+        return <ErrorComponent />
+    }
 
     return (
         <div>
