@@ -1,0 +1,7 @@
+.card_cc > .body_c{
+    overflow: auto;
+}
+.col > .card_cc{
+    height: 420px;
+    background-color: #2e3a46;
+}
