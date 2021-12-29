@@ -21,8 +21,8 @@ const Main = () => {
             setIsError(true)
             console.log(error);
         }
-        setIsLoading(true)
-        setIsError(false)
+        setIsLoading(false)
+        setIsError(true)
     }
 
     useEffect(() => {
